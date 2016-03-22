@@ -1,0 +1,4 @@
+enum singleton is thread safe. is not lazy init. jvm ensures singleton instance exist. jvm takes care of serialization/deserialization also.
+static factory is the next best method. at the time of class loading the instance is created. jvm takes care of thread safety. for this case, we have to handle deserialization by mentioning readResolve method.
+
+for lazy init, we can use doublecheck singleton class. here also we have to take care of serialization. doublecheck and volatile variable makes sure it is thread safe.

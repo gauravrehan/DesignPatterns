@@ -9,11 +9,14 @@ package com.home.designpatterns.pluralsignt.builder;
  * DocumentBuilder
  * Locale.Builder
  * 
- * 
+ * Features:
  * Uses static inner class
  * calls appropriate constructor
  * negates the need for exposed setters
  * 
+ * Builder vs Prototype
+ * Builder: handles complex constructions,  No interface required, can be a seperate class, works with legacy code.
+ * Prototype: implemented around a clone, avoids calling complex constructor, difficult in implementing legacy code.
  */
 public class LunchOrder {
 	
